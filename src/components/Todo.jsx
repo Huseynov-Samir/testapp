@@ -1,17 +1,12 @@
-
-const Todo=({
-    text,
-    id,
-    deleteTodo,
-  })=>{
-  return(
+const Todo = ({ text, id, deleteTodo }) => {
+  return (
     <>
       <div>
         <span>{text}</span>
-        <button onClick={()=>deleteTodo(id)}>x</button>
+        <button onClick={() => deleteTodo(id)}>x</button>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default Todo;
